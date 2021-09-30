@@ -11,7 +11,7 @@ function() {
     
     
     hello.innerHTML ="Goodbye World!";
-    document.getElementById("myBtn").disabled = true;
+    myBtn.disabled = true;
 
 }
 , false);
