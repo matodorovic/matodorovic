@@ -12,6 +12,7 @@ const input = document.querySelector("input");
 const label = document.querySelector("p");
 const trashcan = document.createElement("span");
 
+var listan = new Array(0);
 
 // Knapp lyssnare 
 button.addEventListener("click", function () {
@@ -31,6 +32,7 @@ button.addEventListener("click", function () {
     // Lägg till i ToDo Listan (ul)
     const item = document.createElement("li");
     list.appendChild(item);
+    listan.push(text);
 
     const itemLabel = document.createElement("span");
     itemLabel.innerText = text;
